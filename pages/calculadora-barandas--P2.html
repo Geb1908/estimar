@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Etiquetas meta -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/main.css" />
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="../images/favicon.png"
+      type="image/x-icon"
+    />
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Título -->
+    <title>estimar™ | Calculadora de costos</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="sticky-top">
+      <nav
+        class="navbar navbar-expand-lg navbar-dark"
+        style="background-color: #9c59e4"
+      >
+        <div class="container gap-5">
+          <a class="navbar-brand ps-5" href="../index.html">
+            <img
+              src="../images/favicon.png"
+              alt=""
+              width="30"
+              height="24"
+              class="d-inline-block align-text-top"
+            />
+            estimar
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end pe-5"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav pe-5 gap-3">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html#caracteristicas"
+                  >Características</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html#nosotros">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html#comoFunciona"
+                  >¿Cómo funciona?</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html#faqs">FAQ's</a>
+              </li>
+            </ul>
+            <a class="btn btn-primario--activado" href="calculadora.html">
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-calculator"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z"
+                  />
+                  <path
+                    d="M4 2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-2zm0 4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-4z"
+                  />
+                </svg>
+                Calculadora</span
+              >
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Sección paginación -->
+    <section id="pagination">
+      <div class="container pt-5">
+        <nav aria-label="...">
+          <ul class="pagination pagination-sm">
+            <li class="page-item">
+              <a class="page-link" href="../pages/calculadora.html">Paso 1</a>
+            </li>
+            <li class="page-item active" aria-current="page">
+              <span class="page-link">Paso 2</span>
+            </li>
+            <li class="page-item disabled">
+              <a class="page-link" href="#">Paso 3</a>
+            </li>
+            <li class="page-item disabled">
+              <a class="page-link" href="#">Paso 4</a>
+            </li>
+            <li class="page-item disabled">
+              <a class="page-link" href="#">Paso 5</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <!-- Sección main -->
+    <main id="main--calculadora">
+      <div class="container pt-3">
+        <div class="row d-flex align-items-center">
+          <div class="col-12 align-items-start">
+            <h1>Tu proyecto</h1>
+            <h6>
+              Seleccionaste "Barandas" para obtener cantidad de materiales y
+              costos estimados
+            </h6>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Sección formulario con datos -->
+    <section id="datosProyecto">
+      <div class="container pt-5 pb-5">
+        <div class="row">
+          <div class="col">
+            <h1 class="display-6">Datos de la obra</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <form id="formProyecto">
+              <div class="mb-3">
+                <label for="datoEmpresa" class="form-label">Empresa</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="datoEmpresa"
+                  placeholder="Ingrese el nombre de su empresa"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="datoCliente" class="form-label">Cliente</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="datoCliente"
+                  placeholder="Ingrese el nombre de su cliente"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="datoProyecto" class="form-label">Proyecto</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="datoProyecto"
+                  placeholder="Ingrese el nombre del proyecto"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="datoLugar" class="form-label">Lugar</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="datoLugar"
+                  placeholder="Ingrese el nombre del lugar de ejecución"
+                />
+              </div>
+            </form>
+            <div class="row pt-3 pb-3" id="alertaDatosObra"></div>
+            <button type="button" class="btn btn-success" id="botonConfirmar">
+              Confirmar
+            </button>
+            <a
+              class="btn btn-outline-danger disabled"
+              role="button"
+              id="botonEditar"
+              href="calculadora-barandas--P2.html"
+              >Editar</a
+            >
+            <a
+              class="btn btn-primary disabled"
+              href="../pages/calculadora-barandas--P3.html"
+              role="button"
+              id="botonContinuar"
+              >Continuar</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <!-- Sección footer -->
+  <footer id="footer" class="footer-1">
+    <div class="main-footer widgets-dark typo-dark">
+      <div class="container">
+        <div class="row pt-5">
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="widget subscribe no-box">
+              <h5 class="widget-title">estimar™<span></span></h5>
+              <p>
+                Estimamos <i class="fas fa-heart"></i> poder ayudarte con tus
+                proyectos.
+              </p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="widget no-box">
+              <h5 class="widget-title">Enlaces rápidos<span></span></h5>
+              <ul class="thumbnail-widget">
+                <li>
+                  <div class="thumb-content">
+                    <a href="calculadora.html">Empieza</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="thumb-content">Clientes</div>
+                </li>
+                <li>
+                  <div class="thumb-content">Testimonios</div>
+                </li>
+                <li>
+                  <div class="thumb-content">Eventos</div>
+                </li>
+                <li>
+                  <div class="thumb-content">Novedades</div>
+                </li>
+                <li>
+                  <div class="thumb-content">
+                    <a href="../index.html#nosotros" class="">Nosotros</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 pb-3 pb-md-0">
+            <div class="widget no-box">
+              <h5 class="widget-title">Empieza<span></span></h5>
+              <p>Acceda a su entrenamiento completo de formación.</p>
+              <a
+                class="btn btn-outline-danger disabled"
+                href="#"
+                target="_blank"
+                >Suscríbete</a
+              >
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="widget no-box">
+              <h5 class="widget-title">Contáctanos<span></span></h5>
+              <p>
+                <a href="mailto:hola@estimar.com.ar" title="glorythemes"
+                  >hola@estimar.com.ar</a
+                >
+              </p>
+              <ul class="social-footer2">
+                <li class="">
+                  <img
+                    alt="facebook"
+                    width="15"
+                    height="15"
+                    src="../images/f.png"
+                  />
+                </li>
+                <li class="">
+                  <img
+                    alt="linkedin"
+                    width="15"
+                    height="15"
+                    src="../images/in.png"
+                  />
+                </li>
+                <li class="">
+                  <img
+                    alt="instagram"
+                    width="15"
+                    height="15"
+                    src="../images/ig.png"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>Copyright estimar™ © 2022. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Bootstrap Javascript: Bundle with Popper -->
+  <script src="../libs/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- Scripts calculadora -->
+  <script src="../scripts/class/obra.js"></script>
+  <script src="../scripts/class/botones.js"></script>
+  <script src="../scripts/class/gestionarObra.js"></script>
+  <script src="../scripts/mainObra.js"></script>
+</html>

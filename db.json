@@ -1,0 +1,374 @@
+{
+  "materiales": [
+    {
+      "id": 1,
+      "seccion": "Ø33.4 x 2.77 mm",
+      "material": "ACERO AL CARBONO",
+      "calidad": "USO MECÁNICO",
+      "pesoUnit": 2.13,
+      "precioUnit": 7
+    },
+    {
+      "id": 2,
+      "seccion": "Ø33.4 x 3.38 mm",
+      "material": "ACERO AL CARBONO",
+      "calidad": "USO MECÁNICO",
+      "pesoUnit": 2.55,
+      "precioUnit": 7.5
+    },
+    {
+      "id": 3,
+      "seccion": "Ø42.2 x 2.77 mm",
+      "material": "ACERO AL CARBONO",
+      "calidad": "USO MECÁNICO",
+      "pesoUnit": 2.75,
+      "precioUnit": 8.5
+    },
+    {
+      "id": 4,
+      "seccion": "Ø42.2 x 3.56 mm",
+      "material": "ACERO AL CARBONO",
+      "calidad": "USO MECÁNICO",
+      "pesoUnit": 3.46,
+      "precioUnit": 9
+    },
+    {
+      "id": 5,
+      "seccion": "Ø48.3 x 2.77 mm",
+      "material": "ACERO AL CARBONO",
+      "calidad": "USO MECÁNICO",
+      "pesoUnit": 3.17,
+      "precioUnit": 10
+    },
+    {
+      "id": 6,
+      "seccion": "Ø48.3 x 3.68 mm",
+      "material": "ACERO AL CARBONO",
+      "calidad": "USO MECÁNICO",
+      "pesoUnit": 4.13,
+      "precioUnit": 11
+    },
+    {
+      "id": 7,
+      "seccion": "Ø33.4 x 2.77 mm",
+      "material": "ACERO AL CARBONO",
+      "calidad": "SIN COSTURA (A106 GR.B)",
+      "pesoUnit": 2.13,
+      "precioUnit": 10
+    },
+    {
+      "id": 8,
+      "seccion": "Ø33.4 x 3.38 mm",
+      "material": "ACERO AL CARBONO",
+      "calidad": "SIN COSTURA (A106 GR.B)",
+      "pesoUnit": 2.55,
+      "precioUnit": 10.5
+    },
+    {
+      "id": 9,
+      "seccion": "Ø42.2 x 2.77 mm",
+      "material": "ACERO AL CARBONO",
+      "calidad": "SIN COSTURA (A106 GR.B)",
+      "pesoUnit": 2.75,
+      "precioUnit": 11.5
+    },
+    {
+      "id": 10,
+      "seccion": "Ø42.2 x 3.56 mm",
+      "material": "ACERO AL CARBONO",
+      "calidad": "SIN COSTURA (A106 GR.B)",
+      "pesoUnit": 3.46,
+      "precioUnit": 12
+    },
+    {
+      "id": 11,
+      "seccion": "Ø48.3 x 2.77 mm",
+      "material": "ACERO AL CARBONO",
+      "calidad": "SIN COSTURA (A106 GR.B)",
+      "pesoUnit": 3.17,
+      "precioUnit": 13
+    },
+    {
+      "id": 12,
+      "seccion": "Ø48.3 x 3.68 mm",
+      "material": "ACERO AL CARBONO",
+      "calidad": "SIN COSTURA (A106 GR.B)",
+      "pesoUnit": 4.13,
+      "precioUnit": 14
+    },
+    {
+      "id": 13,
+      "seccion": "Ø33.4 x 2.77 mm",
+      "material": "ACERO AL CARBONO",
+      "calidad": "CON COSTURA (A53 GR.B)",
+      "pesoUnit": 2.13,
+      "precioUnit": 8.5
+    },
+    {
+      "id": 14,
+      "seccion": "Ø33.4 x 3.38 mm",
+      "material": "ACERO AL CARBONO",
+      "calidad": "CON COSTURA (A53 GR.B)",
+      "pesoUnit": 2.55,
+      "precioUnit": 9
+    },
+    {
+      "id": 15,
+      "seccion": "Ø42.2 x 2.77 mm",
+      "material": "ACERO AL CARBONO",
+      "calidad": "CON COSTURA (A53 GR.B)",
+      "pesoUnit": 2.75,
+      "precioUnit": 10
+    },
+    {
+      "id": 16,
+      "seccion": "Ø42.2 x 3.56 mm",
+      "material": "ACERO AL CARBONO",
+      "calidad": "CON COSTURA (A53 GR.B)",
+      "pesoUnit": 3.46,
+      "precioUnit": 10.5
+    },
+    {
+      "id": 17,
+      "seccion": "Ø48.3 x 2.77 mm",
+      "material": "ACERO AL CARBONO",
+      "calidad": "CON COSTURA (A53 GR.B)",
+      "pesoUnit": 3.17,
+      "precioUnit": 11.5
+    },
+    {
+      "id": 18,
+      "seccion": "Ø48.3 x 3.68 mm",
+      "material": "ACERO AL CARBONO",
+      "calidad": "CON COSTURA (A53 GR.B)",
+      "pesoUnit": 4.13,
+      "precioUnit": 12.5
+    },
+    {
+      "id": 19,
+      "seccion": "L38.1 x 4.8 mm",
+      "material": "ACERO AL CARBONO",
+      "calidad": "ESTRUCTURAL (A36 / F24)",
+      "pesoUnit": 2.71,
+      "precioUnit": 5.42
+    },
+    {
+      "id": 20,
+      "seccion": "L38.1 x 6.4 mm",
+      "material": "ACERO AL CARBONO",
+      "calidad": "ESTRUCTURAL (A36 / F24)",
+      "pesoUnit": 3.53,
+      "precioUnit": 7.06
+    },
+    {
+      "id": 21,
+      "seccion": "L44.4 x 3.2 mm",
+      "material": "ACERO AL CARBONO",
+      "calidad": "ESTRUCTURAL (A36 / F24)",
+      "pesoUnit": 2.22,
+      "precioUnit": 4.44
+    },
+    {
+      "id": 22,
+      "seccion": "L44.4 x 4.8 mm",
+      "material": "ACERO AL CARBONO",
+      "calidad": "ESTRUCTURAL (A36 / F24)",
+      "pesoUnit": 3.25,
+      "precioUnit": 6.5
+    },
+    {
+      "id": 23,
+      "seccion": "L50.8 x 4.8 mm",
+      "material": "ACERO AL CARBONO",
+      "calidad": "ESTRUCTURAL (A36 / F24)",
+      "pesoUnit": 3.7,
+      "precioUnit": 7.4
+    },
+    {
+      "id": 24,
+      "seccion": "L50.8 x 6.4 mm",
+      "material": "ACERO AL CARBONO",
+      "calidad": "ESTRUCTURAL (A36 / F24)",
+      "pesoUnit": 4.84,
+      "precioUnit": 9.68
+    },
+    {
+      "id": 25,
+      "seccion": "Ø33.4 x 2.77 mm",
+      "material": "ACERO INOXIDABLE 304",
+      "calidad": "SIN COSTURA (A312)",
+      "pesoUnit": 2.13,
+      "precioUnit": 21
+    },
+    {
+      "id": 26,
+      "seccion": "Ø33.4 x 3.38 mm",
+      "material": "ACERO INOXIDABLE 304",
+      "calidad": "SIN COSTURA (A312)",
+      "pesoUnit": 2.55,
+      "precioUnit": 24
+    },
+    {
+      "id": 27,
+      "seccion": "Ø42.2 x 2.77 mm",
+      "material": "ACERO INOXIDABLE 304",
+      "calidad": "SIN COSTURA (A312)",
+      "pesoUnit": 2.75,
+      "precioUnit": 26
+    },
+    {
+      "id": 28,
+      "seccion": "Ø42.2 x 3.56 mm",
+      "material": "ACERO INOXIDABLE 304",
+      "calidad": "SIN COSTURA (A312)",
+      "pesoUnit": 3.46,
+      "precioUnit": 29
+    },
+    {
+      "id": 29,
+      "seccion": "Ø48.3 x 2.77 mm",
+      "material": "ACERO INOXIDABLE 304",
+      "calidad": "SIN COSTURA (A312)",
+      "pesoUnit": 3.17,
+      "precioUnit": 30
+    },
+    {
+      "id": 30,
+      "seccion": "Ø48.3 x 3.68 mm",
+      "material": "ACERO INOXIDABLE 304",
+      "calidad": "SIN COSTURA (A312)",
+      "pesoUnit": 4.13,
+      "precioUnit": 33
+    },
+    {
+      "id": 31,
+      "seccion": "Ø33.4 x 2.77 mm",
+      "material": "ACERO INOXIDABLE 304",
+      "calidad": "CON COSTURA (A554)",
+      "pesoUnit": 2.13,
+      "precioUnit": 21
+    },
+    {
+      "id": 32,
+      "seccion": "Ø33.4 x 3.38 mm",
+      "material": "ACERO INOXIDABLE 304",
+      "calidad": "CON COSTURA (A554)",
+      "pesoUnit": 2.55,
+      "precioUnit": 23
+    },
+    {
+      "id": 33,
+      "seccion": "Ø42.2 x 2.77 mm",
+      "material": "ACERO INOXIDABLE 304",
+      "calidad": "CON COSTURA (A554)",
+      "pesoUnit": 2.75,
+      "precioUnit": 26
+    },
+    {
+      "id": 34,
+      "seccion": "Ø42.2 x 3.56 mm",
+      "material": "ACERO INOXIDABLE 304",
+      "calidad": "CON COSTURA (A554)",
+      "pesoUnit": 3.46,
+      "precioUnit": 29
+    },
+    {
+      "id": 35,
+      "seccion": "Ø48.3 x 2.77 mm",
+      "material": "ACERO INOXIDABLE 304",
+      "calidad": "CON COSTURA (A554)",
+      "pesoUnit": 3.17,
+      "precioUnit": 30
+    },
+    {
+      "id": 36,
+      "seccion": "Ø48.3 x 3.68 mm",
+      "material": "ACERO INOXIDABLE 304",
+      "calidad": "CON COSTURA (A554)",
+      "pesoUnit": 4.13,
+      "precioUnit": 34
+    },
+    {
+      "id": 37,
+      "seccion": "L38.1 x 4.8 mm",
+      "material": "ACERO INOXIDABLE 304",
+      "calidad": "ESTRUCTURAL (A240)",
+      "pesoUnit": 2.71,
+      "precioUnit": 18
+    },
+    {
+      "id": 38,
+      "seccion": "L38.1 x 6.4 mm",
+      "material": "ACERO INOXIDABLE 304",
+      "calidad": "ESTRUCTURAL (A240)",
+      "pesoUnit": 3.53,
+      "precioUnit": 21
+    },
+    {
+      "id": 39,
+      "seccion": "L44.4 x 3.2 mm",
+      "material": "ACERO INOXIDABLE 304",
+      "calidad": "ESTRUCTURAL (A240)",
+      "pesoUnit": 2.22,
+      "precioUnit": 13
+    },
+    {
+      "id": 40,
+      "seccion": "L44.4 x 4.8 mm",
+      "material": "ACERO INOXIDABLE 304",
+      "calidad": "ESTRUCTURAL (A240)",
+      "pesoUnit": 3.25,
+      "precioUnit": 19
+    },
+    {
+      "id": 41,
+      "seccion": "L50.8 x 4.8 mm",
+      "material": "ACERO INOXIDABLE 304",
+      "calidad": "ESTRUCTURAL (A240)",
+      "pesoUnit": 3.7,
+      "precioUnit": 23
+    },
+    {
+      "id": 42,
+      "seccion": "L50.8 x 6.4 mm",
+      "material": "ACERO INOXIDABLE 304",
+      "calidad": "ESTRUCTURAL (A240)",
+      "pesoUnit": 4.84,
+      "precioUnit": 30
+    }
+  ],
+  "elementos": [
+    {
+      "id": 1,
+      "nombre": "Barandas",
+      "imagen": "../images/handrail3d.png",
+      "descripcion": "Para protecciones en escaleras, plataformas u otros elementos similares.",
+      "href": "calculadora-barandas--P2.html",
+      "js": "guardarElemento"
+    },
+    {
+      "id": 2,
+      "nombre": "Plataformas",
+      "imagen": "../images/platform3d.jpg",
+      "descripcion": "Para acceso a niveles, operación de equipos o aplicaciones similares.",
+      "href": "#",
+      "js": "avisoProximamente"
+    },
+    {
+      "id": 3,
+      "nombre": "Soportes",
+      "imagen": "../images/support3d.png",
+      "descripcion": "Para soportería de cañerías.",
+      "href": "#",
+      "js": "avisoProximamente"
+    },
+    {
+      "id": 4,
+      "nombre": "Estructuras",
+      "imagen": "../images/structure3d.png",
+      "descripcion": "Para galpones y edificios de proceso.",
+      "href": "#",
+      "js": "avisoProximamente"
+    }
+  ]
+}

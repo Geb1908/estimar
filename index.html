@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Etiquetas meta -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Slick -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="css/slick-carousel.css" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Título -->
+    <title>estimar™ | Calculadora de costos</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="sticky-top">
+      <nav
+        class="navbar navbar-expand-lg navbar-dark"
+        style="background-color: #9c59e4"
+      >
+        <div class="container gap-5">
+          <a class="navbar-brand ps-5" href="index.html">
+            <img
+              src="images/favicon.png"
+              alt=""
+              width="30"
+              height="24"
+              class="d-inline-block align-text-top"
+            />
+            estimar
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end pe-5"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav pe-5 gap-3">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#caracteristicas">Características</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#nosotros">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#comoFunciona">¿Cómo funciona?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#faqs">FAQ's</a>
+              </li>
+            </ul>
+            <a class="btn btn-primario" href="pages/calculadora.html">
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-calculator"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z"
+                  />
+                  <path
+                    d="M4 2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-2zm0 4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-4z"
+                  />
+                </svg>
+                Calculadora</span
+              >
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Sección inicio -->
+    <main id="inicio">
+      <div class="container pt-5 pb-5">
+        <div class="row d-flex align-items-center">
+          <div
+            class="col-12 col-md-6 d-flex flex-column align-items-start gap-4"
+          >
+            <h3>ESTIMACIÓN</h3>
+            <h1>
+              <strong><span>Calcula</span></strong> el costo estimado de tu
+              <span>proyecto</span>
+            </h1>
+            <p>
+              Utiliza nuestra calculadora para calcular un costo estimado de la
+              fabricación de barandas, plataformas, soportes y estructuras
+              metálicas livianas, medianas y pesadas.
+            </p>
+            <div class="row d-flex text-center col-12 gap-4">
+              <div class="col-12 col-md-5">
+                <a
+                  class="btn btn-outline-primary"
+                  href="#caracteristicas"
+                  role="button"
+                  >Tipos de construcciones</a
+                >
+              </div>
+              <div class="col-12 col-md-4 text-center">
+                <a class="btn btn-primary" href="pages/calculadora.html">
+                  <span
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-calculator"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z"
+                      />
+                      <path
+                        d="M4 2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-2zm0 4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-4z"
+                      />
+                    </svg>
+                    Calculadora</span
+                  >
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 pt-3 text-end">
+            <img src="images/main.png" class="img-fluid" alt="..." />
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Sección características -->
+    <section id="caracteristicas">
+      <div class="container pt-5 pb-5">
+        <div class="row">
+          <div
+            class="col d-flex flex-column align-items-center mt-5 pt-5 pb-3 gap-4"
+          >
+            <h3>CARACTERÍSTICAS</h3>
+            <h2>Somos la primera calculadora argentina de estimación</h2>
+            <p>Nos avalan años de experiencia en la industria metalmecánica</p>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center gap-md-5">
+          <div class="row">
+            <div class="col-12 col-md-6 mb-4 mb-md-0">
+              <div class="row">
+                <div class="col-2 text-center align-self-center">
+                  <img
+                    src="images/footsteps.png"
+                    class="img-fluid"
+                    alt="Barandas"
+                    width="30"
+                    height="30"
+                  />
+                </div>
+                <div class="col-10">
+                  <h4>Barandas</h4>
+                  <p>
+                    Para protecciones en escaleras, plataformas u otros
+                    elementos similares.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 mb-4 mb-md-0">
+              <div class="row">
+                <div class="col-2 text-center align-self-center">
+                  <img
+                    src="images/beam.png"
+                    class="img-fluid"
+                    alt="Plataformas"
+                    width="30"
+                    height="30"
+                  />
+                </div>
+                <div class="col-10">
+                  <h4>Plataformas</h4>
+                  <p>
+                    Para acceso a niveles, operación de equipos o aplicaciones
+                    similares.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-6 mb-4 mb-md-0">
+              <div class="row">
+                <div class="col-2 text-center align-self-center">
+                  <img
+                    src="images/valve.png"
+                    class="img-fluid"
+                    alt="Soportes"
+                    width="40"
+                    height="40"
+                  />
+                </div>
+                <div class="col-10">
+                  <h4>Soportes</h4>
+                  <p>Para soportería de cañerías.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 mb-4 mb-md-0">
+              <div class="row">
+                <div class="col-2 text-center align-self-center">
+                  <img
+                    src="images/structure.png"
+                    class="img-fluid"
+                    alt="Estructuras"
+                    width="40"
+                    height="40"
+                  />
+                </div>
+                <div class="col-10">
+                  <h4>Estructuras metálicas</h4>
+                  <p>Para galpones y edificios de proceso.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex flex-md-row-reverse pt-5">
+          <div class="col-12 col-md-6 bg-light d-flex align-self-stretch mt-5">
+            <div class="row m-auto p-5">
+              <div class="col d-flex flex-column gap-3">
+                <h4>USO</h4>
+                <h2>
+                  Aprenda a utilizar nuestra calculadora a través de un ejemplo
+                </h2>
+                <p>Acceda a nuestro ejemplo para aprender a ESTIMAR</p>
+                <div class="row">
+                  <div class="col-4">
+                    <button
+                      type="button"
+                      class="btn btn-outline-primary disabled"
+                    >
+                      Ver ejemplo
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 mt-5">
+            <img src="images/features.png" class="img-fluid" alt="..." />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Sección nosotros -->
+    <section id="nosotros">
+      <div class="container pt-5 pb-5">
+        <div class="row">
+          <div
+            class="col d-flex flex-column align-items-center mt-5 pt-5 pb-5 gap-3"
+          >
+            <h3>NOSOTROS</h3>
+            <h2>+1000 estimaciones avalan nuestros resultados</h2>
+            <p>
+              Nuestra calculadora está basada en el conocimiento que obtuvimos
+              de haber estimado más de 1000 construcciones metálicas.
+            </p>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-evenly mb-5 g-2 g-md-0">
+          <div class="col-7 col-md-3">
+            <div class="cardMetrics text-center">
+              <h2>+1000 Obras</h2>
+            </div>
+          </div>
+          <div class="col-7 col-md-3">
+            <div class="cardMetrics text-center">
+              <h2>+10 Años</h2>
+            </div>
+          </div>
+          <div class="col-7 col-md-3">
+            <div class="cardMetrics text-center">
+              <h2>+5MM USD Estimados</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Sección cómo funciona -->
+    <section id="comoFunciona">
+      <div class="container d-flex flex-column mt-5 pt-5 gap-1">
+        <div class="row">
+          <div class="col p-4 mt-5">
+            <h2 class="pb-2">
+              ¿Cómo funciona la calculadora de construcción de estimar™?
+            </h2>
+            <p>
+              Sigue estos pasos y descubre cuánto cuesta hacer barandas,
+              plataformas, soportes o estructuras. Descubre costos de mano de
+              obra, listado de materiales y más.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container pt-1 pb-5">
+        <div class="responsive mx-auto">
+          <div class="cardHIW">
+            <div class="cardHIW__content">
+              <div class="cardHIW__content-heading">
+                <h2>Elige</h2>
+              </div>
+              <div class="cardHIW__content-body">
+                <p><strong>¿Qué vas a construir?</strong></p>
+                <img
+                  src="images/producto.png"
+                  class="d-inline-block"
+                  alt="..."
+                  style="width: 30px; height: 30px"
+                />
+                <p class="pt-2">
+                  Revisa los elementos y elige qué deseas calcular: barandas,
+                  plataformas, soportes o estructuras
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="cardHIW">
+            <div class="cardHIW__content">
+              <div class="cardHIW__content-heading">
+                <h2>Ingresa</h2>
+              </div>
+              <div class="cardHIW__content-body">
+                <p><strong>¿Cuál es el proyecto?</strong></p>
+                <img
+                  src="images/copywriter.png"
+                  class="d-inline-block"
+                  alt="..."
+                  style="width: 30px; height: 30px"
+                />
+                <p class="pt-2">
+                  Ingresa los datos de tu obra: empresa, cliente, proyecto y
+                  lugar
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="cardHIW">
+            <div class="cardHIW__content">
+              <div class="cardHIW__content-heading">
+                <h2>Personaliza</h2>
+              </div>
+              <div class="cardHIW__content-body">
+                <p><strong>¿Qué necesitás construir?</strong></p>
+                <img
+                  src="images/adjust.png"
+                  class="d-inline-block"
+                  alt="..."
+                  style="width: 30px; height: 30px"
+                />
+                <p class="pt-2">
+                  Selecciona los materiales, el modelo de construcción y el
+                  acabado superficial
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="cardHIW">
+            <div class="cardHIW__content">
+              <div class="cardHIW__content-heading">
+                <h2>Dimensiona</h2>
+              </div>
+              <div class="cardHIW__content-body">
+                <p><strong>¿Qué dimensiones tiene?</strong></p>
+                <img
+                  src="images/paint.png"
+                  class="d-inline-block"
+                  alt="..."
+                  style="width: 30px; height: 30px"
+                />
+                <p class="pt-2">
+                  Ingresa las dimensiones de tu proyecto y el acabado
+                  superficial
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="cardHIW">
+            <div class="cardHIW__content">
+              <div class="cardHIW__content-heading">
+                <h2>Calcula</h2>
+              </div>
+              <div class="cardHIW__content-body">
+                <p><strong>¿Cuánto cuesta tu proyecto?</strong></p>
+                <img
+                  src="images/laptop.png"
+                  class="d-inline-block"
+                  alt="..."
+                  style="width: 30px; height: 30px"
+                />
+                <p class="pt-2">
+                  Obtén un listado de materiales y los costos de construcción
+                  incluyendo el acabado superficial
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Sección faqs -->
+    <section id="faqs">
+      <div class="container pb-5">
+        <div class="row pt-5 mt-5">
+          <div class="col d-flex flex-column align-items-center pt-5">
+            <p class="h3 fw-lighter">ESTAMOS AQUÍ CON VOS</p>
+            <h2>Preguntas Frecuentes</h2>
+            <p>
+              Consulte las preguntas más comunes que nos hacen las empresas de
+              construcción y profesionales afines.
+            </p>
+          </div>
+        </div>
+        <div class="row pt-5">
+          <div class="col-12 col-md-4">
+            <div class="row">
+              <p class="h4 fw-bolder">¿Qué es una estimación de proyecto?</p>
+              <p>
+                Dentro de la gestión de proyectos, la estimación es simplemente
+                un cálculo aproximado del esfuerzo y el costo que puede tomar
+                completar un proyecto. No es una garantía del costo final; en
+                cambio, proporciona al cliente una cotización o guía (a menudo
+                un cálculo aproximado del alcance) de cuánto podría costar hacer
+                el proyecto.
+              </p>
+            </div>
+            <div class="row">
+              <p class="h5 fw-bolder">
+                ¿Por qué las estimaciones son tan importantes?
+              </p>
+              <p>
+                El proceso de calcular cuánto podría costar un proyecto es
+                importante para definir los parámetros de un proyecto
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <p class="h5 fw-bolder">
+              ¿Qué se incluye en una estimación del proyecto?
+            </p>
+            <p>
+              Una estimación básica toma en cuenta: las tareas (qué se va a
+              hacer), los recursos (por quién), la tasa (a qué tasa de
+              facturación, en qué moneda, con cuánto impuesto), la duración (por
+              cuántas horas o días) más cualquier recargo y gastos/costos de
+              terceros
+            </p>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="row">
+              <p class="h5 fw-bolder">
+                ¿Cuál es la diferencia entre una estimación y un presupuesto?
+              </p>
+              <p>
+                Una estimación del proyecto se convierte en un presupuesto del
+                proyecto después de que el cliente aprueba dicha estimación del
+                proyecto. El presupuesto del proyecto determina el costo total
+                asignado por el cliente para el proyecto.
+              </p>
+            </div>
+            <div class="row">
+              <p class="h5 fw-bolder">
+                ¿Es mejor sobreestimar o subestimar proyectos?
+              </p>
+              <p>
+                Se debe crear una estimación de costos que el cliente pueda
+                cubrir, pero que es lo suficientemente alta como para permitirte
+                cumplir con el presupuesto.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Sección footer -->
+    <footer id="footer" class="footer-1">
+      <div class="main-footer widgets-dark typo-dark">
+        <div class="container">
+          <div class="row pt-5">
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="widget subscribe no-box">
+                <h5 class="widget-title">estimar™<span></span></h5>
+                <p>
+                  Estimamos <i class="fas fa-heart"></i> poder ayudarte con tus
+                  proyectos.
+                </p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="widget no-box">
+                <h5 class="widget-title">Enlaces rápidos<span></span></h5>
+                <ul class="thumbnail-widget">
+                  <li>
+                    <div class="thumb-content">
+                      <a href="pages/calculadora.html">Empieza</a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="thumb-content">Clientes</div>
+                  </li>
+                  <li>
+                    <div class="thumb-content">Testimonios</div>
+                  </li>
+                  <li>
+                    <div class="thumb-content">Eventos</div>
+                  </li>
+                  <li>
+                    <div class="thumb-content">Novedades</div>
+                  </li>
+                  <li>
+                    <div class="thumb-content">
+                      <a href="#nosotros" class="">Nosotros</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 pb-3 pb-md-0">
+              <div class="widget no-box">
+                <h5 class="widget-title">Empieza<span></span></h5>
+                <p>Acceda a su entrenamiento completo de formación.</p>
+                <a
+                  class="btn btn-outline-danger disabled"
+                  href="#"
+                  target="_blank"
+                  >Suscríbete</a
+                >
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="widget no-box">
+                <h5 class="widget-title">Contáctanos<span></span></h5>
+                <p>
+                  <a href="mailto:hola@estimar.com.ar" title="glorythemes"
+                    >hola@estimar.com.ar</a
+                  >
+                </p>
+                <ul class="social-footer2">
+                  <li class="">
+                    <img
+                      alt="facebook"
+                      width="15"
+                      height="15"
+                      src="images/f.png"
+                    />
+                  </li>
+                  <li class="">
+                    <img
+                      alt="linkedin"
+                      width="15"
+                      height="15"
+                      src="images/in.png"
+                    />
+                  </li>
+                  <li class="">
+                    <img
+                      alt="instagram"
+                      width="15"
+                      height="15"
+                      src="images/ig.png"
+                    />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <p>Copyright estimar™ © 2022. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Slick -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script type="text/javascript" src="scripts/libraries/rd.slick.js"></script>
+    <!-- Bootstrap Javascript: Bundle with Popper -->
+    <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
