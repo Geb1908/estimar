@@ -53,9 +53,4 @@ Thumbs.db
 /js/coverage/
 /node_modules/
 /scss/
-/node_modules/bootstrap/scss
-/node_modules/bootstrap/site
-/node_modules/bootstrap/nuget
-/node_modules/bootstrap/hugo_build
-/node_modules/bootstrap/.github
 
