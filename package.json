@@ -1,0 +1,23 @@
+{
+  "name": "estimar",
+  "version": "1.0.0",
+  "description": "## Sitio Web de Prueba (Proyecto Integrador)",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss/main.scss css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Geb1908/estimar.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Geb1908/estimar/issues"
+  },
+  "homepage": "https://github.com/Geb1908/estimar#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.0"
+  }
+}
